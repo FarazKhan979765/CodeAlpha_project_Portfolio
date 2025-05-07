@@ -1,80 +1,62 @@
-/* Global styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
-  }
-  
-  /* Home Section */
-  #home {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 50px 0;
-  }
-  
-  #home h1 {
-    font-size: 3em;
-  }
-  
-  #home p {
-    font-size: 1.5em;
-  }
-  
-  /* About Section */
-  #about {
-    padding: 50px;
-    background-color: #fff;
-    text-align: center;
-  }
-  
-  #about h2 {
-    font-size: 2em;
-  }
-  
-  #about p {
-    font-size: 1.2em;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  /* Projects Section */
-  #projects {
-    padding: 50px;
-    background-color: #f1f1f1;
-  }
-  
-  .project {
-    margin-bottom: 30px;
-  }
-  
-  .project h3 {
-    font-size: 1.5em;
-  }
-  
-  .project a {
-    color: #0073e6;
-    text-decoration: none;
-  }
-  
-  /* Contact Section */
-  #contact {
-    padding: 50px;
-    background-color: #fff;
-    text-align: center;
-  }
-  
-  #contact a {
-    color: #0073e6;
-  }
-  
-  /* Footer */
-  footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: white;
-  }
-  
+*{
+  margin: 0%;
+  padding: 0%;
+  font-family:'Poooines', sans-serif;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: black;
+  color: white;
+}
+
+#header{
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/bgimg.png.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.container{
+  padding: 10px 10px;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap:wrap ;
+}
+
+h1{
+  width: 140px;
+}
+
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a{
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+
+nav ul li a::after{
+  content: '';
+  width: 0%;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+  width: 100%;
+}
