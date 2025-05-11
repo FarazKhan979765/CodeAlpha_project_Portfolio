@@ -6,20 +6,26 @@
 }
 
 body{
-  background-color: black;
+  background: black;
   color: white;
+}
+
+html{
+  scroll-behavior: smooth;
 }
 
 #header{
   width: 100%;
   height: 100vh;
-  background-image: url(images/bgimg.png.jpg);
+  padding-left: 10;
+  background-image: url(images/background.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: center; 
+  background-attachment: fixed;
 }
 
 .container{
-  padding: 10px 10px;
+  padding: 10px 10%;
 }
 
 nav{
@@ -28,8 +34,7 @@ nav{
   justify-content: space-between;
   flex-wrap:wrap ;
 }
-
-h1{
+.logo{
   width: 140px;
 }
 
@@ -59,4 +64,303 @@ nav ul li a::after{
 
 nav ul li a:hover::after{
   width: 100%;
+}
+
+.homepage{
+  margin-top: 20%;
+  font-size: 30px;
+}
+
+.homepage h1{
+  font-size:60px;
+  margin-top: 20px;
+}
+
+.homepage span{
+  color: #ff004f;
+}
+
+/* ------------About section---------- */
+
+#aboutpage{
+  padding: 80px 0;
+}
+
+.box{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px 10%;
+}
+
+ .boxleft{
+  flex-basis: 35%;
+}
+
+.boxleft img{
+  width: 100%;
+  border-radius: 15px;
+}
+
+.boxright{
+  flex-basis: 60%;
+} 
+
+.boxright h1{
+  font-size: 60px;
+  font-weight: 600;
+  color: white;
+}
+
+.educationtab{
+  display: flex;
+  margin: 20px 0 40px;
+}
+
+.tabtitle{
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+
+.tabtitle::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background-color: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 100%;
+}
+
+.tabcontent ul li{
+  list-style: none;
+  margin: 10px 0;
+}
+
+.tabcontent ul li span{
+  color: #8d002c;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+ /* ------------Skills-----------  */
+
+#skills{
+  text-align: center;
+}
+
+.skillcontainer{
+  margin: 40px 0;
+}
+
+.skillcontainer h1{
+  font-size: 50px;
+  font-weight: 600;
+  color: #ff004f;
+  display: flex;
+  justify-content: center;
+}
+
+.skillrow1,
+.skillrow2{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 100px;
+  margin-bottom: 60px;
+  height: auto;
+}
+
+.skillrow1 img,
+.skillrow2 img{
+  width: 200px;
+  max-width: 100%;
+  padding: 10px;
+  height: auto;
+  transition: 0.3s;
+}
+
+.skillrow1 img:hover,
+.skillrow2 img:hover{
+  transform: scale(1.1);
+}
+
+/* -----------Projects section------------ */
+
+#projects{
+  padding: 150px 10%;
+}
+
+.projecthead{
+  font-size: 50px;
+  font-weight: 600;
+  color: #ff004f;
+  display: flex;
+  margin-top: -90px;
+}
+
+.work-list{
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-top: 50px;
+}
+
+.work{
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.work img{
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+}
+
+.work:hover img{
+  transform: scale(1.1);
+}
+
+.layer{
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), #45e1e9);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  font-size: 14px;
+  text-align: center;
+  transition: height 0.5s;
+}
+
+.layer h3{
+  margin-bottom: 20px;
+}
+
+.layer a{
+  margin-top: 20px;
+  color: #ff004f;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 60px;
+  background: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.work:hover .layer{
+  height: 100%;
+}
+
+.btn{
+  display: block;
+  margin: 50px auto;
+  margin-bottom: -4%;
+  width: fit-content;
+  border: 2px solid #ff004f;
+  padding: 14px 50px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: white;
+  transition: background 0.5s;
+}
+
+.btn:hover{
+  background: #ff004f;
+}
+
+/* ---------------Contact Section------------ */
+
+#contact{}
+
+.contactcontainer{
+  padding: 10%;
+  padding-top: 0%;
+  padding-bottom: 0%;
+}
+
+.contactbox{
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+.contactleft{
+  flex-basis: 35%;
+}
+
+.contactleft p{
+  margin-top: 30px;
+}
+
+.socialmedia{
+  margin-top: 30px;
+}
+
+.socialmedia a{
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 15px;
+  color: #ababab;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+
+.socialmedia a:hover{
+  color: #ff004f;
+  transform: translateY(-5px);
+}
+.contactright{
+  flex-basis: 60%;
+}
+
+.contactright form{
+  width: 100%;
+}
+
+form input, form textarea{
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #262626;
+  padding: 15px;
+  margin:  15px 0;
+  color: white;
+  font-size: 18px;
+  border-radius: 6px;
+}
+
+form .btn2{
+  padding: 14px 60px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+  background: #ff0051;
+  border-radius: 10px;
+  color: white;
+}
+
+.copyright{
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
+  background: #262626;
+  font-weight: 300;
+  margin-top: 20px;
 }
