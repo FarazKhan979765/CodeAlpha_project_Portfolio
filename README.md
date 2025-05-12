@@ -1,8 +1,8 @@
-# Personal Portfolio Website
+## Personal Portfolio Website
 
 This is a responsive personal portfolio website built using HTML, CSS, and JavaScript. It showcases my background, skills, and projects as a Web/App Developer.
 
-# Features
+## Features
 
 - Homepage with an introduction and catchy tagline.
 
@@ -17,7 +17,7 @@ This is a responsive personal portfolio website built using HTML, CSS, and JavaS
 - Fully responsive layout with engaging UI/UX.
 
 
-# Technologies Used
+## Technologies Used
 
 - HTML
 
@@ -27,27 +27,7 @@ This is a responsive personal portfolio website built using HTML, CSS, and JavaS
 
 - FormSubmit – For handling contact form submissions
 
-
-# Folder Structure
-
-|-- index.html
-|-- style.css
-|-- /images
-    |-- logologo.png
-    |-- background.jpg
-    |-- faraz1.png
-    |-- htmllogo.png
-    |-- csslogo.png
-    |-- javasctiptlogo.png
-    |-- pyhonlogo.png
-    |-- javalogo.png
-    |-- sqllogo.png
-    |-- work-1.png
-    |-- work-2.png
-    |-- work-3.png
-
-
-# Future Improvements
+## Future Improvements
 
 - Add JavaScript for form validation and animation.
 
@@ -59,6 +39,8 @@ This is a responsive personal portfolio website built using HTML, CSS, and JavaS
 
 ## Screenshots
 
-![Page 1](Screenshots/Screenshot1.png)
-![Page 2](Screenshots/Screenshot2.png)
-![Page 3](Screenshots/Screenshot3.png)
+![Page 1](Screenshots/page1.png)
+![Page 2](Screenshots/page2.png)
+![Page 3](Screenshots/page3.png)
+![Page 4](Screenshots/page4.png)
+![Page 5](Screenshots/page5.png)
